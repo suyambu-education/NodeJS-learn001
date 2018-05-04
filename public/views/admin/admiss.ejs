@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School Management </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body >
+<div>
+        <% include master/adminM.ejs %>
+</div>
+ <!-- Navigation -->
+
+    <div class="container" style="padding-top: 40px">
+
+    <h1 class="mt-5">Admission  Manager</h1>
+    <form action="" method="POST">
+        <table cellspacing=4>
+            <tr>
+              <td> <label for="">Roll No:</label> </td>
+              <td><input type="text" name="rollno" class="form-control" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for="">Student Name:</label> </td>
+                <td><input type="text" name="stdname"class="form-control" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for="">DOB:</label> </td>
+                <td><input type="date" class="form-control" name="dob" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for="">Address :</label> </td>
+                <td><input type="text" class="form-control" name="address" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for="">Parents Name:</label> </td>
+                <td><input type="text" class="form-control" name="pname" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Parents Mail:</label> </td>
+                <td><input type="email" class="form-control" name="pmail" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Student Mail:</label> </td>
+                <td><input type="email" class="form-control" name="smail" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Parents Mobile:</label> </td>
+                <td><input type="number" name="pmobile" class="form-control" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Emergency Contact:</label> </td>
+                <td><input type="number" class="form-control" name="emobile" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Batch :</label> </td>
+                <td><input type="number" class="form-control" name="batch" id=""></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Class :</label> </td>
+                <td><input type="number" class="form-control" name="class" id=""></td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                    <input type="submit" value="Save" class="btn btn-danger">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</form>
+</div>
+</body>
+</html>

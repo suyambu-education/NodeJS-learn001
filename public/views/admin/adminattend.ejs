@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School Management </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body >
+<div>
+        <% include master/adminM.ejs %>
+</div>
+ <!-- Navigation -->
+
+    <div class="container" style="padding-top: 40px">
+
+    <h1 class="mt-5">Attendence Manager</h1>
+
+        <div> 
+            <label for="">Attendence Date : </label> <input type="date" name="Attendencedate" id="">
+        </div>
+        <% if(show!=null){ %>
+                <table cellpadding=4 cellspacing=2>
+                    <thead style="background: burlywood">
+                        <th>S No</th>
+                        <th> Student </th>
+                        <th> Pressen / Absent </th>
+                    </thead>
+                    <tbody>
+                     <% for(var i=0; i < show.length; i++) { var j =i+1; %>
+                    <tr >
+                        <td><%= j %> </td>
+                        <td><%= show[i].Student_Name %> <input type="hidden" name="<%= show[i].roll_no %>" ></td>
+                        <td> <input style="margin-left: 50px;" type="checkbox" name="check" id=""> </td>
+                    </tr>
+                    <% } %>
+                    </tbody>
+                    <tfoot>
+                            <tr>
+                              <td>
+                                  <input class="btn btn-danger" type="submit" value="submit" name="submit">
+                              </td>
+                              
+                            </tr>
+                    </tfoot>
+                </table>
+        <% }else{ %>
+            <p>Chek The User or Contact The Admin</p>
+        <% } %>
+
+
+    
+    </div>
+
+</div>
+</body>
+</html>

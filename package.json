@@ -1,0 +1,25 @@
+{
+  "name": "school-management",
+  "version": "1.0.0",
+  "description": "school management Project By Aswam Software ",
+  "main": "app.js",
+  "scripts": {
+    "test": "app start"
+  },
+  "keywords": [
+    "NodeJs"
+  ],
+  "author": "Arun Kumar S",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-myconnection": "^1.0.4",
+    "http": "0.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "path": "^0.12.7"
+  }
+}
